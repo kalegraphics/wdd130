@@ -1,107 +1,169 @@
 /* Rafting Website Stylesheet */
 
 :root {
-    --primary-color: #6ab0de;
-    --secondary-color: #4c6e8c;
-    --accent-color: #ffffff;
-    --text-color: #333333;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-    background-color: var(--accent-color);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  header img {
-    height: 50px;
-  }
-  
-  header nav a {
-    color: var(--accent-color);
-    text-decoration: none;
-    margin: 0 10px;
-    font-weight: bold;
-  }
-  
-  main .hero {
-    position: relative;
-    text-align: center;
-    color: var(--accent-color);
-  }
-  
-  main .hero img {
-    width: 100%;
-    display: block;
-  }
-  
-  main .hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-  }
-  
-  main .hero article {
-    position: absolute;
-    bottom: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
-    border-radius: 10px;
-    color: var(--accent-color);
-  }
-  
-  main .hero article img {
-    float: right;
-    margin-left: 10px;
-    width: 150px;
-    height: auto;
-  }
-  
-  main section {
-    padding: 20px;
-  }
-  
-  main h2 {
-    font-size: 2rem;
-    color: var(--secondary-color);
-  }
-  
-  main img {
-    margin: 10px;
-    width: 200px;
-    height: auto;
-  }
-  
-  footer {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
-    text-align: center;
-    padding: 10px;
-  }
-  
-  footer img {
-    width: 30px;
-    margin: 0 5px;
-    vertical-align: middle;
-  }
-  
-  footer a {
-    text-decoration: none;
-  }
-  
+  --primary-color: #6ab0de;
+  --secondary-color: #4c6e8c;
+  --accent-color: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav a {
+  color: var(--accent-color);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+main .hero {
+  position: relative;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+main .hero img {
+  width: 100%;
+  display: block;
+}
+
+main .hero h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+main .hero article {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--accent-color);
+}
+
+main .hero article img {
+  float: right;
+  margin-left: 10px;
+  width: 150px;
+  height: auto;
+}
+
+main section {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+main img {
+  margin: 10px;
+  width: 200px;
+  height: auto;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 10px;
+}
+
+footer img {
+  width: 30px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.employee-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between each profile */
+  padding: 40px;
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.employee {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.employee h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.employee p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Center Contact Us Section */
+.contact-section {
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers horizontally */
+  text-align: center; /* Centers text */
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align form elements to center */
+  width: 100%;
+}
+
+/* Center Contact Info */
+.contact-info {
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Centers horizontally */
+  text-align: center; /* Centers text */
+}
