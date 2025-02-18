@@ -161,9 +161,95 @@ footer a {
   width: 100%;
 }
 
+legend{
+  color: blue;
+  font-size: 2rem;
+}
+
 /* Center Contact Info */
 .contact-info {
   width: 50%; /* Adjust width as needed */
   margin: 0 auto; /* Centers horizontally */
   text-align: center; /* Centers text */
+}
+
+.trip-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.trip {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.trip h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.trip p {
+  font-size: 14px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.employee-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between each profile */
+  padding: 40px;
+  flex-wrap: wrap; /* Ensures responsiveness on smaller screens */
+}
+
+.employee {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.employee img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.employee h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.employee p {
+  font-size: 14px;
+  color: #666;
 }
