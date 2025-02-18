@@ -1,57 +1,56 @@
+/* Navigation Bar */
 nav {
     background-color: darkblue;
     padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
-    display: block;
-    padding: 20px;
-}
-hi {
-    color: darkblue;
+    display: inline-block; /* Fixes vertical stacking */
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-img {
-width: 150px;
-height: auto;
-border: 1px solid black;
-padding: 2px;
-box-shadow: 0 0 30px gray;
-}
-
-
-p {
+/* Layout Fix */
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 20px auto;
     padding: 10px;
 }
 
+/* Main Section */
 main {
-    max-width: 840px;
+    flex: 2;
+    padding: 20px;
 }
-aside{
-    width: 20rem;
+
+/* Sidebar (Aside) */
+aside {
+    flex: 1;
     margin: 1rem;
-    border: 1px solidrgb(0 0 0 / 0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* Fixed border issue */
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
 }
 
-aside img {
-    width:200px;
+/* Image Styling */
+img {
+    width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
-main img {
-    width:150px;
-    height: auto;
-}
-
-p{ padding: 0;}
-
-footer{
+/* Footer */
+footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+    padding: 10px;
 }
