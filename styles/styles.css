@@ -1,52 +1,79 @@
-main {
-    max-width: 840px;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-nav {
-    background-color: darkblue;
-    padding: 10px;
-}
+    :root {
+        --colorwhite: white;
+        --colorblue: darkblue;
 
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-}
+    }
 
-h1 {
-    color: darkblue;
-}
+    main {
+        max-width: 840px;
+    }
 
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px grey;
-}
+    nav {
+        background-color: var(--colorblue);
+        padding: 10px;
+    }
 
-p {
-    padding: 0px;
-}
+    nav a {
+        color: var(--colorwhite);
+        display: block;
+        padding: 20px;
+    }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    /* 1 */
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-}
+    h1 {
+        color: var(--colorblue);
+    }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
+    aside h2 {
+        position: absolute;
 
-footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
+    }
+
+    main img {
+        float: right;
+        width: 150px;
+        height: auto;
+        border: 1px solid black;
+        padding: 2px;
+        box-shadow: 0 0 30px grey;
+    }
+
+    p {
+        padding: 0px;
+    }
+
+    .aside {
+        width: 20rem;
+        margin: 1rem;
+        border: 1px solid rgb(0 0 0 / 0.2);
+        /* 1 */
+        padding: 1rem;
+        background-color: #eee;
+        color: #333;
+        text-align: center;
+    }
+
+    aside img {
+        width: 200px;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 15px;
+        border-top: 1px solid #000;
+        text-align: center;
+    }
+
+    /* Class Selectors */
+    .box {
+        margin: 1rem;
+        border: 1px solid rgb(0 0 0 / 10%);
+        padding: 1rem;
+        background-color: #ddd;
+        color: #000;
+    }
