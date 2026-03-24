@@ -48,10 +48,12 @@ article {
     padding: 8px;
 }
 
-article {
+.hero article {
     position: absolute;
-    bottom: 325px;
+    bottom: 20px;
+    left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
+    margin: 0;
 }
 
 .socialmedia a {
