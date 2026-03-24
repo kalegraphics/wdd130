@@ -1,11 +1,11 @@
 :root {
     --primary-color: #ffffff;
     /* forest green */
-    --secondary-color: #f4a261;
+    --secondary-color: #000000;
     /* warm sand */
     --accent1-color: #030d58;
     /* dark slate blue */
-    --accent2-color: #e9c46a;
+    --accent2-color: #04148d;
     /* light golden yellow */
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
@@ -90,4 +90,8 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+footer {
+    color: var(--secondary-color);
 }
