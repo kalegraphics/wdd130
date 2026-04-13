@@ -182,3 +182,74 @@ h1 {
 footer {
     color: var(--secondary-color);
 }
+
+/* CONTACT PAGE */
+
+.contact-info {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info h1 {
+    position: static;
+    background: none;
+    color: var(--accent1-color);
+    opacity: 1;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--accent1-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* EMPLOYEES SECTION */
+
+.employees {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.employee-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
